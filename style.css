@@ -1,63 +1,79 @@
+/* Import font dari Google Fonts */
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8f0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffe4ec, #fff6f0);
     color: #333;
 }
 
+/* Header */
 header {
-    background-color: #f28ab2;
+    background: linear-gradient(135deg, #f78fb3, #f8a5c2);
     color: white;
     text-align: center;
-    padding: 2em 1em;
+    padding: 3em 1em;
+    border-bottom: 5px solid #fceae8;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.header-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin-bottom: 0.2em;
 }
 
-.flower-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2em;
+.header-content p {
+    font-size: 1.2em;
+}
+
+/* Gallery Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2em;
+    padding: 3em;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.flower-card {
+/* Card Design */
+.card {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 280px;
+    border-radius: 15px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.flower-card:hover {
-    transform: scale(1.03);
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-.flower-card img {
+.card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.flower-card h2 {
-    margin: 0.5em;
-    color: #e63946;
-}
-
-.flower-card p {
-    margin: 0 0.5em 1em 0.5em;
-    font-size: 0.95em;
-}
-
-footer {
-    background-color: #f28ab2;
+.card h2 {
+    font-family: 'Pacifico', cursive;
+    color: #d46a92;
+    margin: 0.8em 0 0.3em 0;
     text-align: center;
-    padding: 1em;
+}
+
+.card p {
+    padding: 0 1em 1.2em;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #f78fb3;
     color: white;
-    margin-top: 2em;
+    font-size: 0.9em;
 }
