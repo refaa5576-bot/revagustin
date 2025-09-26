@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jenis-Jenis Kelinci</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kelinci & Dunia Mereka</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>🐇 Galeri Jenis Kelinci</h1>
-        <p>Menjelajahi berbagai jenis kelinci yang lucu dan menggemaskan</p>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🐇 KelinciKu</div>
+      <ul class="nav-links">
+        <li><a href="#jenis">Jenis Kelinci</a></li>
+        <li><a href="#manfaat">Manfaat</a></li>
+        <li><a href="#wisata">Wisata</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="rabbit-gallery">
-        <article class="rabbit-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Lop_Rabbit_Herder-05.jpg" alt="Kelinci Lop" />
-            <h2>Kelinci Lop</h2>
-            <p>Kelinci ini dikenal dengan telinga panjang yang menggantung ke bawah, sangat menggemaskan.</p>
+  <section class="hero">
+    <h1>Selamat Datang di Dunia Kelinci</h1>
+    <p>Mengenal lebih dekat jenis kelinci, manfaatnya, dan tempat wisata favorit kelinci.</p>
+  </section>
+
+  <main>
+    <section id="jenis" class="content-section">
+      <h2>Jenis Kelinci</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Lop_Rabbit_Herder-05.jpg" alt="Kelinci Lop" />
+          <h3>Kelinci Lop</h3>
+          <p>Dikenal dengan telinga panjang yang menjuntai ke bawah, sangat lucu dan ramah.</p>
         </article>
-
-        <article class="rabbit-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Dutch_Rabbit_2008_G1.jpg/640px-Dutch_Rabbit_2008_G1.jpg" alt="Kelinci Dutch" />
-            <h2>Kelinci Dutch</h2>
-            <p>Berasal dari Belanda, memiliki pola warna unik dengan wajah dan badan yang berbeda warna.</p>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Dutch_Rabbit_2008_G1.jpg/640px-Dutch_Rabbit_2008_G1.jpg" alt="Kelinci Dutch" />
+          <h3>Kelinci Dutch</h3>
+          <p>Punya corak warna yang khas dengan wajah putih dan badan warna lain.</p>
         </article>
-
-        <article class="rabbit-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flemish_Giant_2007.jpg/640px-Flemish_Giant_2007.jpg" alt="Kelinci Flemish Giant" />
-            <h2>Kelinci Flemish Giant</h2>
-            <p>Jenis kelinci terbesar di dunia, sangat besar dan biasanya dipelihara sebagai hewan peliharaan unik.</p>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flemish_Giant_2007.jpg/640px-Flemish_Giant_2007.jpg" alt="Kelinci Flemish Giant" />
+          <h3>Kelinci Flemish Giant</h3>
+          <p>Jenis kelinci terbesar, ukurannya bisa sampai 6-7 kg, ramah dan tenang.</p>
         </article>
+      </div>
+    </section>
 
-        <article class="rabbit-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Rex_rabbit_1.jpg/640px-Rex_rabbit_1.jpg" alt="Kelinci Rex" />
-            <h2>Kelinci Rex</h2>
-            <p>Kelinci berbulu halus dan pendek dengan tekstur yang lembut seperti beludru.</p>
+    <section id="manfaat" class="content-section">
+      <h2>Manfaat Kelinci</h2>
+      <ul class="benefits-list">
+        <li><strong>Hewan Peliharaan:</strong> Kelinci lucu dan mudah dirawat, cocok untuk teman keluarga.</li>
+        <li><strong>Pendidikan:</strong> Membantu anak belajar bertanggung jawab dan mengenal hewan.</li>
+        <li><strong>Produksi:</strong> Beberapa jenis kelinci dibudidayakan untuk daging dan bulu.</li>
+        <li><strong>Wisata:</strong> Banyak tempat wisata edukasi yang menampilkan kelinci sebagai daya tarik.</li>
+      </ul>
+    </section>
+
+    <section id="wisata" class="content-section">
+      <h2>Wisata Kelinci Favorit</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Rabbit Island, Jepang" />
+          <h3>Rabbit Island, Jepang</h3>
+          <p>Pulau Okunoshima yang terkenal dengan populasi kelinci liar yang ramah wisatawan.</p>
         </article>
-    </main>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=600&q=80" alt="Farm Kelinci" />
+          <h3>Farm Kelinci</h3>
+          <p>Beberapa peternakan di Indonesia menyediakan wisata edukasi kelinci untuk keluarga.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Galeri Kelinci | Dibuat dengan kasih sayang 🐰</p>
-    </footer>
+  <footer>
+    <p>© 2025 KelinciKu | Dibuat dengan cinta untuk para pecinta kelinci 🐰</p>
+  </footer>
 </body>
 </html>
