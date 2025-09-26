@@ -1,91 +1,178 @@
-/* Reset & Font */
+/* Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Font & Body */
 body {
-    font-family: 'Nunito', sans-serif;
-    background: linear-gradient(135deg, #f0eafc, #d8e8fc);
-    color: #2c2c2c;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #f0eafc, #d8e8fc);
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Header */
-header {
-    background: #a290fc;
-    color: white;
-    padding: 2.5em 1em;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+/* Navbar */
+.navbar {
+  background: #7e6bc8;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header h1 {
-    font-size: 2.8em;
-    margin-bottom: 0.3em;
-    letter-spacing: 2px;
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  cursor: default;
 }
 
-header p {
-    font-size: 1.2em;
-    font-weight: 300;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
 }
 
-/* Main Gallery */
-.rabbit-gallery {
-    max-width: 1100px;
-    margin: 3em auto;
-    padding: 0 1em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 2.5em;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
 }
 
-/* Cards */
-.rabbit-card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+.nav-links a:hover {
+  color: #ffd6e8;
 }
 
-.rabbit-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  background: #f9e3ff;
+  color: #5e3c99;
 }
 
-.rabbit-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
+.hero h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.rabbit-card h2 {
-    font-size: 1.8em;
-    color: #7253c0;
-    margin: 1em 1em 0.3em;
-    text-align: center;
+.hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.rabbit-card p {
-    font-size: 1em;
-    color: #4b4b4b;
-    padding: 0 1.2em 1.5em;
-    text-align: center;
+/* Content Sections */
+.content-section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.2rem;
+}
+
+.content-section h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.6rem;
+  color: #7e6bc8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Cards Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 2rem;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem;
+  color: #7e6bc8;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.card p {
+  padding: 0 1rem 1.2rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* Benefits List */
+.benefits-list {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 1.1rem;
+  padding-left: 1.2rem;
+  color: #555;
+}
+
+.benefits-list li {
+  margin-bottom: 1.1rem;
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.benefits-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #7e6bc8;
+  font-weight: bold;
 }
 
 /* Footer */
 footer {
-    background: #a290fc;
-    color: white;
-    padding: 1.5em;
-    text-align: center;
-    margin-top: auto;
-    font-weight: 500;
-    letter-spacing: 1.2px;
+  background: #7e6bc8;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
 }
